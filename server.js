@@ -26,11 +26,10 @@ app.set('view engine', 'handlebars');
 // ---------------------------------------------------------------------------------------------------------------
 // Connect to localhost if not a production environment
 if(process.env.NODE_ENV == 'production'){
-  mongoose.connect("mongodb://<perlashowell>:@ds239047.mlab.com:39047/heroku_cdqfkfxm");
+  mongoose.connect("mongodb://heroku_cdqfkfxm:sqeugkt85vsqf1j4om3q2v72mu@ds239047.mlab.com:39047/heroku_cdqfkfxm");
 }
 else{
-  mongoose.connect("mongodb://<perlashowell>:@ds239047.mlab.com:39047/heroku_cdqfkfxm");
-  // YOU CAN IGNORE THE CONNECTION URL BELOW (LINE 41) THAT WAS JUST FOR DELETING STUFF ON A RE-DEPLOYMENT
+  mongoose.connect("mongodb://heroku_cdqfkfxm:sqeugkt85vsqf1j4om3q2v72mu@ds239047.mlab.com:39047/heroku_cdqfkfxm");
 }
 var db = mongoose.connection;
 
